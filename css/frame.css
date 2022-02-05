@@ -77,7 +77,7 @@ hr {
   z-index: 2;
   position: static;
   width: 100%;
-  background-color: #bc8e52;
+  background-color: #3dff47;
   min-width: 300px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -272,6 +272,7 @@ hr {
 }
 
 .text {
+  color: whitesmoke;
   margin: 10px 0 10px 0;
   padding: 0;
 }
@@ -293,8 +294,8 @@ hr {
 
 .image {
   border-radius: 2px;
+  height: auto;
   width: 100%;
-
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -302,6 +303,10 @@ hr {
   -ms-user-select: none;
   user-select: none;
   display: flex;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
 }
 
 .image.center {
@@ -706,6 +711,7 @@ ol.nested > li:before {
 }
 
 .add-top-margin {
+  color: rgb(0, 0, 0);
   margin-top: 15px;
 }
 
@@ -724,6 +730,23 @@ ol.nested > li:before {
 .add-bottom-margin-small {
   margin-bottom: 5px;
 }
+.head{
+  color: #ffffff;
+  font-size: 80px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes example {
+    0%   {color:rgb(0, 0, 0); left:0px; top:0px;}
+    25%  {color:rgb(255, 255, 255); left:200px; top:0px;}
+    50%  {color:rgb(0, 0, 0); left:200px; top:200px;}
+    75%  {color:rgb(255, 255, 255); left:0px; top:200px;}
+    100% {color:rgb(0, 0, 0); left:0px; top:0px;}
+  }
 
 .add-bottom-margin-large {
   margin-bottom: 20px;
